@@ -29,3 +29,15 @@ main = hspec $
 
     it "returns Buzz when given 10" $
         fst (fizzBuzz 10) `shouldBe` "Buzz"
+
+    it "returns Fizz when given 9" $
+        fst (fizzBuzz 9) `shouldBe` "Fizz"
+
+    it "returns Fizz when given 13" $
+        fst (fizzBuzz 13) `shouldBe` "Fizz"
+
+    it "returns Fizz Buzz when given 15" $
+        fst (fizzBuzz 15) `shouldBe` "Fizz Buzz"
+
+    it "returns Buzz when given 58" $
+        fst (fizzBuzz 58) `shouldBe` "Buzz"
